@@ -1,0 +1,627 @@
+.cf:before,
+.cf:after {
+	
+    content: " ";
+	 /* 1 */
+    display: table;
+	 /* 2 */
+
+}
+
+
+
+.cf:after {
+	
+    clear: both;
+	
+
+}
+
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	
+    *zoom: 1;
+	
+
+}
+
+
+
+/*fonts*/
+
+@font-face{
+	
+	font-family: lato;
+	
+	src:url('lato.ttf');
+
+}
+
+@font-face{
+    font-family:lato_B;
+    src:url('LatoBold.ttf');
+}
+
+
+
+/*classes*/
+
+.nav2_selected{
+	color:#c5c5c5;
+}
+
+body{
+	
+	font-family: lato, arial;
+	/*background-image: url('../images/background.png');*/
+	width: 100%;
+	text-align: justify;
+    overflow: hidden;
+    overflow-y:scroll; 
+
+}
+
+
+
+.main-wrapper{
+	max-width: 1022px;
+	margin: auto;
+}
+
+
+header{
+	background-color: #2d303a;
+}
+
+/* logo */
+
+#logo{
+    color:white;
+    font-size:25px;
+    text-transform:uppercase;
+}
+
+#logo span{
+    color:#f06c64;
+}
+
+.footer-nav{
+    background-color:#2d303a;
+}
+
+header nav, .footer-nav{
+    width:100%;
+}
+
+header nav li, .footer-nav li{
+   width:100%;
+   text-align:center;
+   padding:5px;
+}
+
+header nav li a:hover, .footer-nav li a:hover{
+	color: #f06c64;
+}
+
+header nav li span{
+    display:none;
+}
+
+header nav a, .footer-nav a{
+    text-decoration:none;
+    color:white;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+
+
+/* slider */
+
+#slider{
+    display:none;
+}
+
+
+/* vision */
+
+#vision{
+    padding: 70px 10px;
+	background-color: #f2f2f2;
+}
+
+#our_services h1{
+    padding-bottom:30px;
+    font-size:30px;
+    color:#666d89;
+    font-family:lato_B;
+}
+
+#our_services p{
+    font-size:18px;
+    color:#666d89;
+    line-height:1.6em;
+}
+
+
+.row:nth-child(2){
+    margin-top:50px;
+}
+
+
+.cell{
+    margin-top:20px;
+    color:#666d89;
+    position:relative;
+}
+
+
+.cell>img{
+    float:left;
+    margin-right:20px;
+   
+}
+
+#left{
+    float:left;
+}
+
+
+.cell h2{
+    font-size:18px;
+    font-family:lato_B;
+    
+}
+
+.cell p{
+    line-height:1.6em;
+}
+
+
+/* portfolio */
+
+
+#portfolio{
+    padding: 70px 10px;
+	background-color: #2d303a;
+	color:#666d89;
+    position: relative;
+    margin-top: 20px;
+}
+
+#portfolio h1{
+    font-family:lato_B;
+    font-size:30px;
+    padding-bottom:30px;
+}
+
+#portfolio p{
+    font-size:18px;
+}
+
+#portfolio nav{
+    margin-top:16px;
+}
+
+#portfolio nav li{
+    padding:5px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+#portfolio nav a {
+    text-decoration:none;
+    color:inherit;
+    border:1px solid;
+    padding:4px;
+    padding-top: 5px;
+    border-radius:5px;
+}
+
+#portfolio ul li{
+    margin-top: 10px;
+
+}
+
+#portfolio ul:nth-child(4){
+    padding-top:18px;
+}
+
+#portfolio ul:nth-child(4) li{
+    margin-top:15px;
+}
+
+#portfolio li img{
+    width:100%;
+    opacity: .9;
+}
+ 
+#portfolio li img:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 5px #f06c64;
+} 
+
+
+/* about */
+
+#about{
+    padding: 70px 10px;
+	background-color: #f2f2f2;
+    color:#666d89;
+}
+
+.cell_2>img{
+    width:100%;
+}
+
+#about h1{
+    padding-bottom:30px;
+    font-size:30px;
+    font-family:lato_B;
+}
+
+#about p{
+    line-height:1.6em;
+}
+
+.cell_2{
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.cell_2 h2{
+    margin-top:20px;
+    font-size:18px;
+    font-family:lato_B;
+}
+
+.social{
+    margin-top:30px;
+}
+
+.social img{
+    
+}
+
+
+/* contact */
+
+#contact{
+    padding: 70px 10px;
+	background-color: #f06c64;
+    color:#f0d8d9;
+}
+
+#contact h1{
+    padding-bottom:30px;
+    font-size:30px;
+    font-family:lato_B;
+}
+
+#contact p:nth-child(2){
+   line-height:1.6em;
+}
+
+#contact form{
+    margin-top:30px;
+}
+
+#contact input{
+    box-sizing:border-box;
+    padding:5px;
+    
+    
+}
+
+input, textarea{
+	margin-top:10px;
+	background-color: #d6564f;
+	border:none;
+    width:100%;
+    font-family:lato;
+    font-size:12px;
+    color:#f0d8d9;
+    font-size:18px;
+}
+
+
+textarea{
+    min-height:150px;
+}
+
+
+#contact_info{
+    margin-top:30px;
+     margin-bottom: 50px;
+}
+
+#contact_info h2{
+    font-size:18px;
+    font-family:lato_B;
+}
+
+#contact_info p{
+    line-height:1.6em;
+}
+
+#contact_info p:nth-child(2){
+    margin:20px 0px;
+}
+
+#contact_info img{
+    position:relative;
+    margin-right:10px;
+    top:3px;
+}
+
+/* footer */
+
+footer{
+    padding: 30px 10px;
+	background-color: #2d303a;
+}
+
+footer p{
+    float:left;
+    color:#626984;
+    margin-top:10px;
+}
+
+footer .social_footer{
+    float:right;
+}
+
+
+/* tablet */
+
+@media screen and (min-width:600px){
+    #portfolio li img{
+        width:48%;
+        float:left;
+        margin-left:10px;
+    }    
+    
+}
+
+
+/* desktop */
+
+@media screen and (min-width:1000px){
+
+/*     header */
+    
+    header{
+        padding-bottom:40px;
+    }
+
+    #vision, #portfolio, #contact, #about{
+        padding:70px 40px;
+    }
+    
+    #logo {
+        float:left;
+    }
+    
+	#logo p{
+		margin-left: 30px;
+		padding-top: 40px;
+	}
+    
+    header nav, .footer-nav{
+        position:relative;
+        width:400px;
+        top:45px;
+        float:right;
+        margin-right: 10px;
+    }
+    
+    .footer-nav{
+        height: 30px;
+        width: 405px;
+
+        padding-top: 10px;
+        top: 71px;
+        left: 40px;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    .footer-nav li{ 
+        padding: 6px;
+    }
+    
+    header li, .footer-nav li{
+        display:inline;
+    }
+    
+    .selected a{
+        color:#f06c64;
+    }
+    
+    header nav li span{
+        display:inline;
+        color:white;
+        position:relative;
+        top:-5px;
+    }
+    
+/*     slider */
+    
+    #slider{
+        display:block;
+        width:100%;
+    }
+    
+    
+/*     vision */
+
+
+	#row{
+		width: 100%;
+	}
+
+	.cell{
+		width: 32%;	
+		float: left;
+		margin-left: 5px;
+	}
+
+	.cell img{
+		width:60px;
+		height: 60px;
+		float: left;
+	}
+
+	#right{
+		float: left;
+		width:70%;
+	}
+
+	#right h2{
+		padding-bottom: 10px;
+	}
+
+	#right p{
+		font-size: 12px;
+	}
+
+    .cells{
+    
+    }
+
+    
+    #portfolio nav li{
+        float: left;
+    }
+
+   #imagini{
+    	width:730px;
+    	margin: auto;
+    	box-sizing:border-box;
+    }
+
+    #imagini li{
+    	float: left;
+    	margin-left: 15px;
+    	width: 219px;
+    	height:187px;
+    	padding: 0px;
+    }
+    
+    #imagini li img{
+    	width:100%;
+    	height: 100%;
+    	padding: 0px;
+    	margin: 0px;
+    }
+    
+    
+/*     about */
+    
+    #about{
+        width:100%;
+        float: left;
+        box-sizing:border-box;
+    }
+    
+
+    .small_container{
+        position: relative;
+    }
+
+    .cell_2{
+        box-sizing:border-box;
+        border:none;
+        width: 260px;
+        position: absolute;
+        left:20px;
+    }
+
+
+    .right{
+        float: right;
+        width:60%;
+    }
+    
+    .cell_2 h2{
+        font-size:18px;
+        font-family:lato_B;
+    }
+    
+    .cell_2 p{
+        font-size:12px;
+    }
+
+    /*skills*/
+    .skills-container{
+        width:730px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .skills ul li{
+        display: none;
+    }
+    
+    
+/*     quote */
+    
+    #contact{
+        width:100%;
+        clear: both;
+        box-sizing:border-box;
+        position:relative;
+    }
+    
+    #contact h1{
+        font-size:30px;
+        font-family:lato_B;
+    }
+    
+    
+    #row_2 form{
+        width:500px;
+        float:left;
+    }
+    
+    #row_2 input, #row_2 textarea{
+        box-sizing:border-box;
+        border-radius:5px;
+        font-size:12px;
+        padding:15px 10px;
+    }
+    
+    #contact_info{
+       width:300px;
+       float:right;
+
+    }
+    
+    #contact_info h2{
+        font-size:20px;
+        font-family:lato_b;
+    }
+    
+    #contact_info p{
+        font-size:12px;
+    }
+    
+/*     footer */
+
+    footer{
+        padding:30px 40px;
+    }
+    
+    footer p{
+        font-size:12px;
+    }
+    
+}
